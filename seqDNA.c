@@ -30,7 +30,15 @@ int main() {
 
   grafo G = cria_grafo();
 
+  // encontra a trilha euleriana e imprime
+  // lista T = trilha_euleriana(G);
+  // imprime_trilha(T);
 
+  // constroi um fragmento de DNA e imprime
+  // r = reconstroi_DNA ();
+
+  // compara o fragmento r com o s e imprime a porcentagem
+  // imprime_diferença (s, r);
   
   return 0;
 }
