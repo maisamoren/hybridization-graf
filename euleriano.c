@@ -20,7 +20,16 @@
 // Funções auxiliares usadas: rotaciona(T), trilha_fechada(G,T,v) e
 // concatena(T, TF).
 lista trilha_euleriana(grafo G) {
-  // implementar...
+  // supondo que todos os vértices de G tem grau par
+  // r <- vértice de G
+  // T <- r
+
+  // enquanto E(G) != E(T)
+  //   v <- vértice de T de grau positivo em G-E(T)
+  //   faça uma rotação em T de forma que fazer de v seu início
+  //   T <- concatena (T, TrilhaFechada(G-E(T),v))
+
+  // devolva T
 }
 
 // Encontra uma trilha fechada no grafo G a partir de v e
@@ -28,7 +37,17 @@ lista trilha_euleriana(grafo G) {
 // Para cada par de vértices (u,v) incluído na lista, remove
 // do grafo G a aresta (u,v).
 lista trilha_fechada(grafo G, vertice v) {
-  // implementar
+  // supondo que todos os vértices de G tem grau par
+  // T <- v
+  // x <- v
+
+  // repita
+  //   [x,y] <- aresta de fronteira de x - arestas de T
+  //   acrescente y ao final de T
+  //   x <- y
+  // até que y = v
+
+  // devolva T
 }
 
 // Recebe uma lista T representando uma trilha fechada e
