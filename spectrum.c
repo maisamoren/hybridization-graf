@@ -81,6 +81,22 @@ grafo constroi_grafo_spectrum(lista l_mers, int l, int *ini_id, int *fim_id) {
   // l-1 últimos caracteres, e adiciona uma aresta direcionada
   // entre esses vértices
   // implementar...
+  no aux = topo(l_mers);
+  no ida = aux->proximo;
+  while (proximo(aux) != NULL){ // ponteiro p/ primeiro
+    
+    // ida
+    while (proximo(ida) != NULL){
+      printf("passou aqui, conteudo %c", conteudo(ida));
+      
+      ida->anterior = ida;
+      ida = ida->proximo;
+    }
+
+    //for volta
+    
+    aux = aux->proximo;
+  }
   
   // Balanceia o grafo, se necessário
   balanceia(G, IDA, ini_id, fim_id);
