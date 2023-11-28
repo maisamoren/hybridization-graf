@@ -26,11 +26,20 @@ int main() {
   embaralha_spectrum(l_mers); // para simulação mais realista
   imprime_spectrum(l_mers);
     
-  // implementar o resto...
+  // constroi grafo direcionado
+  grafo G = constroi_grafo_spectrum(l_mers, l, 1, 1);
 
-  grafo G = cria_grafo();
+  // printf("%c\n", conteudo(topo(l_mers)));
+  
+  // encontra a trilha euleriana e imprime
+  // lista T = trilha_euleriana(G);
+  // imprime_trilha(T);
 
+  // constroi um fragmento de DNA e imprime
+  // r = reconstroi_DNA (T, l, ???, ???);
 
+  // compara o fragmento r com o s e imprime a porcentagem
+  // imprime_diferença (s, r);
   
   return 0;
 }
