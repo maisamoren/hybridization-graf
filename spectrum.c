@@ -153,4 +153,9 @@ char *reconstroi_DNA(lista T, int l, int ini_id, int fim_id) {
 // s e r.
 void imprime_diferenca(char *s, char *r) {
   // implementar...
+
+  
+//   int acerto;
+//   printf("Acerto: %d", &acerto);
+//   printf("%%\n");
 }
